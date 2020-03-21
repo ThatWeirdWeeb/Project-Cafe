@@ -26,10 +26,11 @@ public class runnerSS {
         scs.setVisible(true);
         
         Thread a = new Thread(){
+            @Override
             public void run(){
                 try{
                     sleep(3000);
-                }catch(Exception ex){
+                }catch(InterruptedException ex){
                     Logger.getLogger(splashscreen.class.getName()).log(Level.SEVERE, null, ex);
                 }finally{
                     scs.setVisible(false);
