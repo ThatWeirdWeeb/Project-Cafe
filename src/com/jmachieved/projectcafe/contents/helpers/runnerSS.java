@@ -18,18 +18,25 @@ public class runnerSS {
 //running the splash screen
 
     public static void main(String[] args) {
-        splashscreen scs = new splashscreen();
+        /*
+            Shows the splashscreen.java 1st and then there's a thread to 
+            count down and to show the Home.java
+        */
+        splashscreen scs = new splashscreen(); 
         scs.setVisible(true);
-        try {
-            for (int o = 0; o <= 100; o++) {
-                Thread.sleep(40);
-                if (o == 100) {
+        
+        Thread a = new Thread(){
+            public void run(){
+                try{
+                    sleep(3000);
+                }catch(Exception ex){
+                    Logger.getLogger(splashscreen.class.getName()).log(Level.SEVERE, null, ex);
+                }finally{
                     scs.setVisible(false);
                     new Home().setVisible(true);
                 }
-            }
-        } catch (InterruptedException ex) {
-            Logger.getLogger(splashscreen.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            }         
+        };
+        a.start();
     }
 }
