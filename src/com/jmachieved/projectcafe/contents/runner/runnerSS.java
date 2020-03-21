@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jmachieved.projectcafe.contents.helpers;
+package com.jmachieved.projectcafe.contents.runner;
 
 import com.jmachieved.projectcafe.contents.Home;
 import com.jmachieved.projectcafe.contents.splashscreen;
