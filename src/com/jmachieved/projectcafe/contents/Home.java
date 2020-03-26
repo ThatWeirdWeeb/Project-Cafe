@@ -5,17 +5,23 @@
  */
 package com.jmachieved.projectcafe.contents;
 
+import java.awt.Toolkit;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author johnp
  */
 public class Home extends javax.swing.JFrame {
 
+  
+
     /**
      * Creates new form Home
      */
     public Home() {
         initComponents();
+        setIcon();
     }
 
     /**
@@ -29,73 +35,78 @@ public class Home extends javax.swing.JFrame {
 
         jPstatbar = new javax.swing.JPanel();
         lbClose = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lbMinimize = new javax.swing.JLabel();
         jPmain = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("[cafe]");
         setBackground(new java.awt.Color(204, 204, 204));
+        setMaximumSize(new java.awt.Dimension(1900, 1060));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1500, 830));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPstatbar.setBackground(new java.awt.Color(27, 27, 27));
-        jPstatbar.setPreferredSize(new java.awt.Dimension(1126, 30));
+        jPstatbar.setMaximumSize(new java.awt.Dimension(1500, 40));
+        jPstatbar.setMinimumSize(new java.awt.Dimension(1500, 40));
+        jPstatbar.setPreferredSize(new java.awt.Dimension(1500, 40));
+        jPstatbar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/icons8_cancel_20px.png"))); // NOI18N
+        lbClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/close.png"))); // NOI18N
+        lbClose.setPreferredSize(new java.awt.Dimension(18, 18));
+        lbClose.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         lbClose.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbCloseMouseClicked(evt);
             }
         });
+        jPstatbar.add(lbClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 20, 40));
 
-        javax.swing.GroupLayout jPstatbarLayout = new javax.swing.GroupLayout(jPstatbar);
-        jPstatbar.setLayout(jPstatbarLayout);
-        jPstatbarLayout.setHorizontalGroup(
-            jPstatbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPstatbarLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbClose)
-                .addContainerGap(1100, Short.MAX_VALUE))
-        );
-        jPstatbarLayout.setVerticalGroup(
-            jPstatbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPstatbarLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbClose)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/contents/icoo.png"))); // NOI18N
+        jPstatbar.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 0, -1, 40));
 
-        getContentPane().add(jPstatbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 40));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("[cafe]");
+        jLabel1.setAlignmentX(0.5F);
+        jLabel1.setAlignmentY(0.0F);
+        jLabel1.setIconTextGap(8);
+        jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPstatbar.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, -1, 40));
 
-        jPanel2.setBackground(new java.awt.Color(66, 66, 66));
+        lbMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/mini.png"))); // NOI18N
+        lbMinimize.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbMinimizeMouseClicked(evt);
+            }
+        });
+        jPstatbar.add(lbMinimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 20, 40));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1130, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1130, 80));
+        getContentPane().add(jPstatbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jPmain.setBackground(new java.awt.Color(109, 109, 109));
+        jPmain.setMaximumSize(new java.awt.Dimension(1900, 1600));
+        jPmain.setMinimumSize(new java.awt.Dimension(1280, 760));
+        jPmain.setPreferredSize(new java.awt.Dimension(1500, 800));
 
         javax.swing.GroupLayout jPmainLayout = new javax.swing.GroupLayout(jPmain);
         jPmain.setLayout(jPmainLayout);
         jPmainLayout.setHorizontalGroup(
             jPmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1130, Short.MAX_VALUE)
+            .addGap(0, 1500, Short.MAX_VALUE)
         );
         jPmainLayout.setVerticalGroup(
             jPmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 640, Short.MAX_VALUE)
+            .addGap(0, 800, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPmain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1130, 640));
+        getContentPane().add(jPmain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+
+        getAccessibleContext().setAccessibleParent(this);
 
         pack();
         setLocationRelativeTo(null);
@@ -103,8 +114,19 @@ public class Home extends javax.swing.JFrame {
 
     private void lbCloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCloseMouseClicked
         // TODO add your handling code here:
-        System.exit(0);
+        int respons = JOptionPane.showConfirmDialog(this, "Do you to continue this action? ",
+               "Warning",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        
+        if(respons == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }else{
+        }
+        
     }//GEN-LAST:event_lbCloseMouseClicked
+
+    private void lbMinimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbMinimizeMouseClicked
+        this.setState(this.ICONIFIED);
+    }//GEN-LAST:event_lbMinimizeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -142,9 +164,15 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPmain;
     private javax.swing.JPanel jPstatbar;
     private javax.swing.JLabel lbClose;
+    private javax.swing.JLabel lbMinimize;
     // End of variables declaration//GEN-END:variables
+
+    private void setIcon() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icoo.png")));
+    }
 }
