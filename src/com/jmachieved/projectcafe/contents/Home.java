@@ -5,7 +5,9 @@
  */
 package com.jmachieved.projectcafe.contents;
 
+import java.awt.GraphicsEnvironment;
 import java.awt.Toolkit;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -19,6 +21,8 @@ public class Home extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
+    
+    private static boolean max = true;
     public Home() {
         initComponents();
         setIcon();
@@ -33,27 +37,23 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPstatbar = new javax.swing.JPanel();
+        stat = new javax.swing.JPanel();
         lbClose = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         lbMinimize = new javax.swing.JLabel();
-        jPmain = new javax.swing.JPanel();
+        lbFull = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        main = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[cafe]");
         setBackground(new java.awt.Color(204, 204, 204));
-        setMaximumSize(new java.awt.Dimension(1900, 1060));
+        setLocationByPlatform(true);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1500, 830));
-        setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPstatbar.setBackground(new java.awt.Color(27, 27, 27));
-        jPstatbar.setMaximumSize(new java.awt.Dimension(1500, 40));
-        jPstatbar.setMinimumSize(new java.awt.Dimension(1500, 40));
-        jPstatbar.setPreferredSize(new java.awt.Dimension(1500, 40));
-        jPstatbar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        stat.setBackground(new java.awt.Color(27, 27, 27));
+        stat.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        stat.setPreferredSize(new java.awt.Dimension(0, 0));
 
         lbClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/close.png"))); // NOI18N
         lbClose.setPreferredSize(new java.awt.Dimension(18, 18));
@@ -63,10 +63,20 @@ public class Home extends javax.swing.JFrame {
                 lbCloseMouseClicked(evt);
             }
         });
-        jPstatbar.add(lbClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 20, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/contents/icoo.png"))); // NOI18N
-        jPstatbar.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 0, -1, 40));
+        lbMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/mini.png"))); // NOI18N
+        lbMinimize.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbMinimizeMouseClicked(evt);
+            }
+        });
+
+        lbFull.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/full.png"))); // NOI18N
+        lbFull.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbFullMouseClicked(evt);
+            }
+        });
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
@@ -76,35 +86,65 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setAlignmentY(0.0F);
         jLabel1.setIconTextGap(8);
         jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPstatbar.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, -1, 40));
 
-        lbMinimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/mini.png"))); // NOI18N
-        lbMinimize.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbMinimizeMouseClicked(evt);
-            }
-        });
-        jPstatbar.add(lbMinimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 20, 40));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/contents/icoo.png"))); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(40, 40));
 
-        getContentPane().add(jPstatbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jPmain.setBackground(new java.awt.Color(109, 109, 109));
-        jPmain.setMaximumSize(new java.awt.Dimension(1900, 1600));
-        jPmain.setMinimumSize(new java.awt.Dimension(1280, 760));
-        jPmain.setPreferredSize(new java.awt.Dimension(1500, 800));
-
-        javax.swing.GroupLayout jPmainLayout = new javax.swing.GroupLayout(jPmain);
-        jPmain.setLayout(jPmainLayout);
-        jPmainLayout.setHorizontalGroup(
-            jPmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1500, Short.MAX_VALUE)
+        javax.swing.GroupLayout statLayout = new javax.swing.GroupLayout(stat);
+        stat.setLayout(statLayout);
+        statLayout.setHorizontalGroup(
+            statLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(lbClose, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(lbMinimize)
+                .addGap(10, 10, 10)
+                .addComponent(lbFull)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1321, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        jPmainLayout.setVerticalGroup(
-            jPmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+        statLayout.setVerticalGroup(
+            statLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbClose, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lbMinimize, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lbFull, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        getContentPane().add(jPmain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+        main.setBackground(new java.awt.Color(109, 109, 109));
+        main.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        main.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        javax.swing.GroupLayout mainLayout = new javax.swing.GroupLayout(main);
+        main.setLayout(mainLayout);
+        mainLayout.setHorizontalGroup(
+            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        mainLayout.setVerticalGroup(
+            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 808, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 1498, Short.MAX_VALUE)
+            .addComponent(stat, javax.swing.GroupLayout.DEFAULT_SIZE, 1498, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(stat, 40, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 808, Short.MAX_VALUE))
+        );
 
         getAccessibleContext().setAccessibleParent(this);
 
@@ -127,6 +167,20 @@ public class Home extends javax.swing.JFrame {
     private void lbMinimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbMinimizeMouseClicked
         this.setState(this.ICONIFIED);
     }//GEN-LAST:event_lbMinimizeMouseClicked
+
+    private void lbFullMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbFullMouseClicked
+        // TODO add your handling code here:
+        if(max){
+            Home.this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();  
+            Home.this.setMaximizedBounds(env.getMaximumWindowBounds());
+           max =false; 
+        }else{
+            setExtendedState(JFrame.NORMAL);
+            max= true;
+        }
+       // setExtendedState(getExtendedState()| Home.MAXIMIZED_BOTH);
+    }//GEN-LAST:event_lbFullMouseClicked
 
     /**
      * @param args the command line arguments
@@ -166,10 +220,11 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPmain;
-    private javax.swing.JPanel jPstatbar;
     private javax.swing.JLabel lbClose;
+    private javax.swing.JLabel lbFull;
     private javax.swing.JLabel lbMinimize;
+    private javax.swing.JPanel main;
+    private javax.swing.JPanel stat;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon() {

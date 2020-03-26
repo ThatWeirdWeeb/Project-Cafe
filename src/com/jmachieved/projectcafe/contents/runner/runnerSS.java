@@ -29,7 +29,7 @@ public class runnerSS {
             @Override
             public void run(){
                 try{
-                    sleep(6000);
+                    sleep(3000);
                 }catch(InterruptedException ex){
                     Logger.getLogger(splashscreen.class.getName()).log(Level.SEVERE, null, ex);
                 }finally{
