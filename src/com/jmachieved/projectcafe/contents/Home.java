@@ -44,6 +44,22 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         main = new javax.swing.JPanel();
+        jPcaffeamerica = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jPcaffemocha = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jPcaramelmacchiato = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jPcappuccino = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jPespresso = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jPflatwhite = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jPicedcaffeamericano = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jPwhitechocolatemocha = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[cafe]");
@@ -120,15 +136,211 @@ public class Home extends javax.swing.JFrame {
         main.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         main.setPreferredSize(new java.awt.Dimension(0, 0));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffeamerica.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPcaffeamericaLayout = new javax.swing.GroupLayout(jPcaffeamerica);
+        jPcaffeamerica.setLayout(jPcaffeamericaLayout);
+        jPcaffeamericaLayout.setHorizontalGroup(
+            jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaffeamericaLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jLabel3)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        jPcaffeamericaLayout.setVerticalGroup(
+            jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaffeamericaLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel3)
+                .addContainerGap(181, Short.MAX_VALUE))
+        );
+
+        jPcaffemocha.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffemocha.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPcaffemochaLayout = new javax.swing.GroupLayout(jPcaffemocha);
+        jPcaffemocha.setLayout(jPcaffemochaLayout);
+        jPcaffemochaLayout.setHorizontalGroup(
+            jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(jLabel4)
+                .addContainerGap(41, Short.MAX_VALUE))
+        );
+        jPcaffemochaLayout.setVerticalGroup(
+            jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel4)
+                .addContainerGap(183, Short.MAX_VALUE))
+        );
+
+        jPcaramelmacchiato.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caramelmacchiato.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPcaramelmacchiatoLayout = new javax.swing.GroupLayout(jPcaramelmacchiato);
+        jPcaramelmacchiato.setLayout(jPcaramelmacchiatoLayout);
+        jPcaramelmacchiatoLayout.setHorizontalGroup(
+            jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel6)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPcaramelmacchiatoLayout.setVerticalGroup(
+            jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel6)
+                .addContainerGap(189, Short.MAX_VALUE))
+        );
+
+        jPcappuccino.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/cappuccino.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPcappuccinoLayout = new javax.swing.GroupLayout(jPcappuccino);
+        jPcappuccino.setLayout(jPcappuccinoLayout);
+        jPcappuccinoLayout.setHorizontalGroup(
+            jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel5)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPcappuccinoLayout.setVerticalGroup(
+            jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel5)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jPespresso.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/espresso.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPespressoLayout = new javax.swing.GroupLayout(jPespresso);
+        jPespresso.setLayout(jPespressoLayout);
+        jPespressoLayout.setHorizontalGroup(
+            jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPespressoLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel8)
+                .addContainerGap(41, Short.MAX_VALUE))
+        );
+        jPespressoLayout.setVerticalGroup(
+            jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPespressoLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jLabel8)
+                .addContainerGap(184, Short.MAX_VALUE))
+        );
+
+        jPflatwhite.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/flatwhite.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPflatwhiteLayout = new javax.swing.GroupLayout(jPflatwhite);
+        jPflatwhite.setLayout(jPflatwhiteLayout);
+        jPflatwhiteLayout.setHorizontalGroup(
+            jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(jLabel7)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPflatwhiteLayout.setVerticalGroup(
+            jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel7)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jPicedcaffeamericano.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/icedcaffeamericano.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPicedcaffeamericanoLayout = new javax.swing.GroupLayout(jPicedcaffeamericano);
+        jPicedcaffeamericano.setLayout(jPicedcaffeamericanoLayout);
+        jPicedcaffeamericanoLayout.setHorizontalGroup(
+            jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel9)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPicedcaffeamericanoLayout.setVerticalGroup(
+            jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel9)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jPwhitechocolatemocha.setPreferredSize(new java.awt.Dimension(220, 360));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/whitechocolatemocha.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPwhitechocolatemochaLayout = new javax.swing.GroupLayout(jPwhitechocolatemocha);
+        jPwhitechocolatemocha.setLayout(jPwhitechocolatemochaLayout);
+        jPwhitechocolatemochaLayout.setHorizontalGroup(
+            jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPwhitechocolatemochaLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addGap(90, 90, 90))
+        );
+        jPwhitechocolatemochaLayout.setVerticalGroup(
+            jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel10)
+                .addContainerGap(204, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout mainLayout = new javax.swing.GroupLayout(main);
         main.setLayout(mainLayout);
         mainLayout.setHorizontalGroup(
             mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(mainLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPflatwhite, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
+                    .addComponent(jPcaffemocha, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE))
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainLayout.setVerticalGroup(
             mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 808, Short.MAX_VALUE)
+            .addGroup(mainLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPcaffemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPflatwhite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -143,7 +355,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(stat, 40, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 808, Short.MAX_VALUE))
+                .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE))
         );
 
         getAccessibleContext().setAccessibleParent(this);
@@ -219,7 +431,23 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPcaffeamerica;
+    private javax.swing.JPanel jPcaffemocha;
+    private javax.swing.JPanel jPcappuccino;
+    private javax.swing.JPanel jPcaramelmacchiato;
+    private javax.swing.JPanel jPespresso;
+    private javax.swing.JPanel jPflatwhite;
+    private javax.swing.JPanel jPicedcaffeamericano;
+    private javax.swing.JPanel jPwhitechocolatemocha;
     private javax.swing.JLabel lbClose;
     private javax.swing.JLabel lbFull;
     private javax.swing.JLabel lbMinimize;
