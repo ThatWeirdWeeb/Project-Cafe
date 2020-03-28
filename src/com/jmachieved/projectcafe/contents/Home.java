@@ -46,20 +46,44 @@ public class Home extends javax.swing.JFrame {
         main = new javax.swing.JPanel();
         jPcaffeamerica = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel11 = new javax.swing.JLabel();
         jPcaffemocha = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel20 = new javax.swing.JLabel();
         jPcaramelmacchiato = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jTextArea4 = new javax.swing.JTextArea();
+        jLabel21 = new javax.swing.JLabel();
         jPcappuccino = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jTextArea5 = new javax.swing.JTextArea();
+        jLabel22 = new javax.swing.JLabel();
         jPespresso = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jTextArea6 = new javax.swing.JTextArea();
+        jLabel23 = new javax.swing.JLabel();
         jPflatwhite = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jTextArea7 = new javax.swing.JTextArea();
+        jLabel24 = new javax.swing.JLabel();
         jPicedcaffeamericano = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jTextArea8 = new javax.swing.JTextArea();
+        jLabel25 = new javax.swing.JLabel();
         jPwhitechocolatemocha = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jTextArea9 = new javax.swing.JTextArea();
+        jLabel26 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[cafe]");
@@ -135,213 +159,548 @@ public class Home extends javax.swing.JFrame {
         main.setBackground(new java.awt.Color(109, 109, 109));
         main.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         main.setPreferredSize(new java.awt.Dimension(0, 0));
+        main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPcaffeamerica.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffeamerica.jpg"))); // NOI18N
+        jLabel3.setToolTipText("Water, Brewed Espresso.");
+
+        jLabel12.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel12.setText("Caffe America");
+        jLabel12.setAlignmentX(0.5F);
+        jLabel12.setAlignmentY(0.0F);
+        jLabel12.setIconTextGap(8);
+        jLabel12.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Espresso shots are topped with hot water to produce a light layer of crema. The result is this wonderfully rich cup with depth and nuance.");
+        jTextArea2.setToolTipText("");
+        jTextArea2.setWrapStyleWord(true);
+        jTextArea2.setAutoscrolls(false);
+        jTextArea2.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea2.setEnabled(false);
+        jTextArea2.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel11.setText("$5");
 
         javax.swing.GroupLayout jPcaffeamericaLayout = new javax.swing.GroupLayout(jPcaffeamerica);
         jPcaffeamerica.setLayout(jPcaffeamericaLayout);
         jPcaffeamericaLayout.setHorizontalGroup(
             jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPcaffeamericaLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel3))
+                .addGap(37, 37, 37))
             .addGroup(jPcaffeamericaLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jLabel3)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextArea2)
+                    .addGroup(jPcaffeamericaLayout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPcaffeamericaLayout.setVerticalGroup(
             jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcaffeamericaLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel3)
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel11)
+                .addContainerGap())
         );
 
-        jPcaffemocha.setPreferredSize(new java.awt.Dimension(220, 360));
+        main.add(jPcaffeamerica, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
+
+        jPcaffemocha.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffemocha.jpg"))); // NOI18N
+        jLabel4.setToolTipText("Milk, Brewed Espresso, Mocha Sauce, Whipped Cream");
+
+        jLabel13.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel13.setText("Caffe Mocha");
+        jLabel13.setAlignmentX(0.5F);
+        jLabel13.setAlignmentY(0.0F);
+        jLabel13.setIconTextGap(8);
+        jLabel13.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea3.setLineWrap(true);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("We combine our rich, full-bodied espresso with bittersweet mocha sauce and steamed milk, then top it off with sweetened whipped cream. ");
+        jTextArea3.setToolTipText("");
+        jTextArea3.setWrapStyleWord(true);
+        jTextArea3.setAutoscrolls(false);
+        jTextArea3.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea3.setEnabled(false);
+        jTextArea3.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel20.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel20.setText("$9");
 
         javax.swing.GroupLayout jPcaffemochaLayout = new javax.swing.GroupLayout(jPcaffemocha);
         jPcaffemocha.setLayout(jPcaffemochaLayout);
         jPcaffemochaLayout.setHorizontalGroup(
             jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcaffemochaLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jLabel4)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel4)))
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel20)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPcaffemochaLayout.setVerticalGroup(
             jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcaffemochaLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel4)
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addContainerGap())
         );
+
+        main.add(jPcaffemocha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, -1, -1));
 
         jPcaramelmacchiato.setPreferredSize(new java.awt.Dimension(220, 360));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caramelmacchiato.jpg"))); // NOI18N
+        jLabel6.setToolTipText("Milk, Brewed Espresso, Vanilla Syrup, Caramel Sauce");
+
+        jLabel14.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel14.setText("Caramel Macchiato");
+        jLabel14.setAlignmentX(0.5F);
+        jLabel14.setAlignmentY(0.0F);
+        jLabel14.setIconTextGap(8);
+        jLabel14.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea4.setLineWrap(true);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Freshly steamed milk with vanilla-flavored syrup is marked with espresso and topped with caramel drizzle for an oh-so-sweet finish.");
+        jTextArea4.setToolTipText("");
+        jTextArea4.setWrapStyleWord(true);
+        jTextArea4.setAutoscrolls(false);
+        jTextArea4.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea4.setEnabled(false);
+        jTextArea4.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel21.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel21.setText("$7");
 
         javax.swing.GroupLayout jPcaramelmacchiatoLayout = new javax.swing.GroupLayout(jPcaramelmacchiato);
         jPcaramelmacchiato.setLayout(jPcaramelmacchiatoLayout);
         jPcaramelmacchiatoLayout.setHorizontalGroup(
             jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel6)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea4))
+                    .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                        .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel6)))
+                            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel21)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPcaramelmacchiatoLayout.setVerticalGroup(
             jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel6)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel21)
+                .addContainerGap())
         );
+
+        main.add(jPcaramelmacchiato, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, -1, 410));
 
         jPcappuccino.setPreferredSize(new java.awt.Dimension(220, 360));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/cappuccino.jpg"))); // NOI18N
+        jLabel5.setToolTipText("Milk, Brewed Espresso.");
+
+        jLabel15.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel15.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel15.setText("Cappuccino");
+        jLabel15.setAlignmentX(0.5F);
+        jLabel15.setAlignmentY(0.0F);
+        jLabel15.setIconTextGap(8);
+        jLabel15.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea5.setEditable(false);
+        jTextArea5.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea5.setLineWrap(true);
+        jTextArea5.setRows(5);
+        jTextArea5.setText("Dark, rich espresso lies in wait under a smoothed and stretched layer of thick foam. It’s truly the height of our baristas’ craft.");
+        jTextArea5.setToolTipText("");
+        jTextArea5.setWrapStyleWord(true);
+        jTextArea5.setAutoscrolls(false);
+        jTextArea5.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea5.setEnabled(false);
+        jTextArea5.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel22.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel22.setText("$6");
 
         javax.swing.GroupLayout jPcappuccinoLayout = new javax.swing.GroupLayout(jPcappuccino);
         jPcappuccino.setLayout(jPcappuccinoLayout);
         jPcappuccinoLayout.setHorizontalGroup(
             jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcappuccinoLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel5)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGroup(jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea5))
+                    .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel5))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPcappuccinoLayout.setVerticalGroup(
             jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPcappuccinoLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel5)
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
+                .addComponent(jTextArea5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel22)
+                .addContainerGap())
         );
 
-        jPespresso.setPreferredSize(new java.awt.Dimension(220, 360));
+        main.add(jPcappuccino, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, 410));
+
+        jPespresso.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/espresso.jpg"))); // NOI18N
+        jLabel8.setToolTipText("Brewed Espresso, Velvety Crema");
+
+        jLabel16.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel16.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel16.setText("Espresso");
+        jLabel16.setAlignmentX(0.5F);
+        jLabel16.setAlignmentY(0.0F);
+        jLabel16.setIconTextGap(8);
+        jLabel16.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea6.setEditable(false);
+        jTextArea6.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea6.setLineWrap(true);
+        jTextArea6.setRows(5);
+        jTextArea6.setText("Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.");
+        jTextArea6.setToolTipText("");
+        jTextArea6.setWrapStyleWord(true);
+        jTextArea6.setAutoscrolls(false);
+        jTextArea6.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea6.setEnabled(false);
+        jTextArea6.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel23.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel23.setText("$4");
 
         javax.swing.GroupLayout jPespressoLayout = new javax.swing.GroupLayout(jPespresso);
         jPespresso.setLayout(jPespressoLayout);
         jPespressoLayout.setHorizontalGroup(
             jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPespressoLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel8)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPespressoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea6))
+                    .addGroup(jPespressoLayout.createSequentialGroup()
+                        .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPespressoLayout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel8)))
+                            .addGroup(jPespressoLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel23)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPespressoLayout.setVerticalGroup(
             jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPespressoLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel8)
-                .addContainerGap(184, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel23)
+                .addContainerGap())
         );
 
-        jPflatwhite.setPreferredSize(new java.awt.Dimension(220, 360));
+        main.add(jPespresso, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
+
+        jPflatwhite.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/flatwhite.jpg"))); // NOI18N
+        jLabel7.setToolTipText("Milk, Brewed Espresso.");
+
+        jLabel17.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel17.setText("Flat White");
+        jLabel17.setAlignmentX(0.5F);
+        jLabel17.setAlignmentY(0.0F);
+        jLabel17.setIconTextGap(8);
+        jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea7.setEditable(false);
+        jTextArea7.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea7.setLineWrap(true);
+        jTextArea7.setRows(5);
+        jTextArea7.setText("Bold ristretto shots of espresso get the perfect amount of steamed whole milk to create a not too strong, not too creamy, just right flavor.");
+        jTextArea7.setToolTipText("");
+        jTextArea7.setWrapStyleWord(true);
+        jTextArea7.setAutoscrolls(false);
+        jTextArea7.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea7.setEnabled(false);
+        jTextArea7.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel24.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel24.setText("$7");
 
         javax.swing.GroupLayout jPflatwhiteLayout = new javax.swing.GroupLayout(jPflatwhite);
         jPflatwhite.setLayout(jPflatwhiteLayout);
         jPflatwhiteLayout.setHorizontalGroup(
             jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPflatwhiteLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(jLabel7)
+                .addGroup(jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabel17))
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jLabel7))
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel24)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPflatwhiteLayout.setVerticalGroup(
             jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPflatwhiteLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel7)
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel24)
+                .addContainerGap())
         );
 
-        jPicedcaffeamericano.setPreferredSize(new java.awt.Dimension(220, 360));
+        main.add(jPflatwhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 490, -1, -1));
+
+        jPicedcaffeamericano.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/icedcaffeamericano.jpg"))); // NOI18N
+        jLabel9.setToolTipText("Ice, Water, Brewed Espresso.");
+
+        jLabel18.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel18.setText("Caffe Americano");
+        jLabel18.setAlignmentX(0.5F);
+        jLabel18.setAlignmentY(0.0F);
+        jLabel18.setIconTextGap(8);
+        jLabel18.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea8.setLineWrap(true);
+        jTextArea8.setRows(5);
+        jTextArea8.setText(" Espresso shots are topped with water to produce a light layer of crema, then served over ice.");
+        jTextArea8.setToolTipText("");
+        jTextArea8.setWrapStyleWord(true);
+        jTextArea8.setAutoscrolls(false);
+        jTextArea8.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea8.setEnabled(false);
+        jTextArea8.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel25.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel25.setText("$8");
 
         javax.swing.GroupLayout jPicedcaffeamericanoLayout = new javax.swing.GroupLayout(jPicedcaffeamericano);
         jPicedcaffeamericano.setLayout(jPicedcaffeamericanoLayout);
         jPicedcaffeamericanoLayout.setHorizontalGroup(
             jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(jLabel9)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel18)
+                                    .addComponent(jLabel9)))
+                            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea8)))
+                .addContainerGap())
         );
         jPicedcaffeamericanoLayout.setVerticalGroup(
             jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel9)
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(jLabel25)
+                .addContainerGap())
         );
 
-        jPwhitechocolatemocha.setPreferredSize(new java.awt.Dimension(220, 360));
+        main.add(jPicedcaffeamericano, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 490, -1, -1));
+
+        jPwhitechocolatemocha.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/whitechocolatemocha.jpg"))); // NOI18N
+        jLabel10.setToolTipText("Milk, White Chocolate Mocha Sauce, Brewed Espresso, Whipped Cream ");
+
+        jLabel19.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel19.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel19.setText("White Choco Mocha");
+        jLabel19.setAlignmentX(0.5F);
+        jLabel19.setAlignmentY(0.0F);
+        jLabel19.setIconTextGap(8);
+        jLabel19.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        jTextArea9.setEditable(false);
+        jTextArea9.setBackground(new java.awt.Color(240, 240, 240));
+        jTextArea9.setColumns(20);
+        jTextArea9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        jTextArea9.setLineWrap(true);
+        jTextArea9.setRows(5);
+        jTextArea9.setText("Our signature espresso meets white chocolate sauce and steamed milk, then is finished off with sweetened whipped cream in this white chocolate delight.");
+        jTextArea9.setToolTipText("");
+        jTextArea9.setWrapStyleWord(true);
+        jTextArea9.setAutoscrolls(false);
+        jTextArea9.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        jTextArea9.setEnabled(false);
+        jTextArea9.setMargin(new java.awt.Insets(4, 4, 4, 4));
+
+        jLabel26.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        jLabel26.setText("$9");
 
         javax.swing.GroupLayout jPwhitechocolatemochaLayout = new javax.swing.GroupLayout(jPwhitechocolatemocha);
         jPwhitechocolatemocha.setLayout(jPwhitechocolatemochaLayout);
         jPwhitechocolatemochaLayout.setHorizontalGroup(
             jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPwhitechocolatemochaLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel10)
-                .addGap(90, 90, 90))
+            .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextArea9, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
+                .addGroup(jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel26))
+                    .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel10))))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPwhitechocolatemochaLayout.setVerticalGroup(
             jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel10)
-                .addContainerGap(204, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextArea9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addComponent(jLabel26)
+                .addContainerGap())
         );
 
-        javax.swing.GroupLayout mainLayout = new javax.swing.GroupLayout(main);
-        main.setLayout(mainLayout);
-        mainLayout.setHorizontalGroup(
-            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPflatwhite, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
-                    .addComponent(jPcaffemocha, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE))
-                .addGap(40, 40, 40)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        mainLayout.setVerticalGroup(
-            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPcaffemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPflatwhite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
+        main.add(jPwhitechocolatemocha, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 490, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -355,7 +714,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(stat, 40, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE))
+                .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 944, Short.MAX_VALUE))
         );
 
         getAccessibleContext().setAccessibleParent(this);
@@ -432,7 +791,23 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -448,6 +823,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPflatwhite;
     private javax.swing.JPanel jPicedcaffeamericano;
     private javax.swing.JPanel jPwhitechocolatemocha;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTextArea jTextArea6;
+    private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     private javax.swing.JLabel lbClose;
     private javax.swing.JLabel lbFull;
     private javax.swing.JLabel lbMinimize;
