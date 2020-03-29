@@ -7,8 +7,12 @@ package com.jmachieved.projectcafe.contents;
 
 import java.awt.GraphicsEnvironment;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
+import javax.swing.JSpinner;
+import javax.swing.JTextField;
 
 /**
  *
@@ -16,14 +20,13 @@ import javax.swing.JOptionPane;
  */
 public class Home extends javax.swing.JFrame {
 
-  
-
     /**
      * Creates new form Home
      */
-    
     private static boolean max = true;
+
     public Home() {
+
         initComponents();
         setIcon();
     }
@@ -46,48 +49,59 @@ public class Home extends javax.swing.JFrame {
         main = new javax.swing.JPanel();
         jPcaffeamerica = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        ord1 = new javax.swing.JLabel();
         jTextArea2 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
+        btnCA1 = new javax.swing.JButton();
         jPcaffemocha = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        ord2 = new javax.swing.JLabel();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel20 = new javax.swing.JLabel();
+        btnCM2 = new javax.swing.JButton();
         jPcaramelmacchiato = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        ord3 = new javax.swing.JLabel();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel21 = new javax.swing.JLabel();
+        btnCM3 = new javax.swing.JButton();
         jPcappuccino = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        ord4 = new javax.swing.JLabel();
         jTextArea5 = new javax.swing.JTextArea();
         jLabel22 = new javax.swing.JLabel();
+        btnCP4 = new javax.swing.JButton();
         jPespresso = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        ord5 = new javax.swing.JLabel();
         jTextArea6 = new javax.swing.JTextArea();
         jLabel23 = new javax.swing.JLabel();
+        btnES5 = new javax.swing.JButton();
         jPflatwhite = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        ord6 = new javax.swing.JLabel();
         jTextArea7 = new javax.swing.JTextArea();
         jLabel24 = new javax.swing.JLabel();
+        btnFW6 = new javax.swing.JButton();
         jPicedcaffeamericano = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        ord7 = new javax.swing.JLabel();
         jTextArea8 = new javax.swing.JTextArea();
         jLabel25 = new javax.swing.JLabel();
+        btnCA7 = new javax.swing.JButton();
         jPwhitechocolatemocha = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        ord8 = new javax.swing.JLabel();
         jTextArea9 = new javax.swing.JTextArea();
         jLabel26 = new javax.swing.JLabel();
+        btnWCM8 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("[cafe]");
         setBackground(new java.awt.Color(204, 204, 204));
+        setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         setLocationByPlatform(true);
         setUndecorated(true);
 
@@ -141,7 +155,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(lbMinimize)
                 .addGap(10, 10, 10)
                 .addComponent(lbFull)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1321, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1423, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -157,23 +171,23 @@ public class Home extends javax.swing.JFrame {
         );
 
         main.setBackground(new java.awt.Color(109, 109, 109));
+        main.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         main.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         main.setPreferredSize(new java.awt.Dimension(0, 0));
-        main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPcaffeamerica.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffeamerica.jpg"))); // NOI18N
         jLabel3.setToolTipText("Water, Brewed Espresso.");
 
-        jLabel12.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel12.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel12.setText("Caffe America");
-        jLabel12.setAlignmentX(0.5F);
-        jLabel12.setAlignmentY(0.0F);
-        jLabel12.setIconTextGap(8);
-        jLabel12.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord1.setBackground(new java.awt.Color(204, 204, 204));
+        ord1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord1.setForeground(new java.awt.Color(102, 102, 102));
+        ord1.setText("Caffe America");
+        ord1.setAlignmentX(0.5F);
+        ord1.setAlignmentY(0.0F);
+        ord1.setIconTextGap(8);
+        ord1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(240, 240, 240));
@@ -190,7 +204,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea2.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel11.setText("$5");
+        jLabel11.setText("$5.49");
+
+        btnCA1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnCA1.setBorderPainted(false);
+        btnCA1.setContentAreaFilled(false);
+        btnCA1.setFocusPainted(false);
+        btnCA1.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnCA1.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnCA1.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCA1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPcaffeamericaLayout = new javax.swing.GroupLayout(jPcaffeamerica);
         jPcaffeamerica.setLayout(jPcaffeamericaLayout);
@@ -199,7 +226,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPcaffeamericaLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
+                    .addComponent(ord1)
                     .addComponent(jLabel3))
                 .addGap(37, 37, 37))
             .addGroup(jPcaffeamericaLayout.createSequentialGroup()
@@ -208,7 +235,8 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jTextArea2)
                     .addGroup(jPcaffeamericaLayout.createSequentialGroup()
                         .addComponent(jLabel11)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPcaffeamericaLayout.setVerticalGroup(
@@ -217,29 +245,29 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ord1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextArea2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addGroup(jPcaffeamericaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel11)
+                    .addComponent(btnCA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
-        main.add(jPcaffeamerica, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
         jPcaffemocha.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caffemocha.jpg"))); // NOI18N
         jLabel4.setToolTipText("Milk, Brewed Espresso, Mocha Sauce, Whipped Cream");
 
-        jLabel13.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel13.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel13.setText("Caffe Mocha");
-        jLabel13.setAlignmentX(0.5F);
-        jLabel13.setAlignmentY(0.0F);
-        jLabel13.setIconTextGap(8);
-        jLabel13.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord2.setBackground(new java.awt.Color(204, 204, 204));
+        ord2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord2.setForeground(new java.awt.Color(102, 102, 102));
+        ord2.setText("Caffe Mocha");
+        ord2.setAlignmentX(0.5F);
+        ord2.setAlignmentY(0.0F);
+        ord2.setIconTextGap(8);
+        ord2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea3.setEditable(false);
         jTextArea3.setBackground(new java.awt.Color(240, 240, 240));
@@ -256,7 +284,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea3.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel20.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel20.setText("$9");
+        jLabel20.setText("$9.59");
+
+        btnCM2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnCM2.setBorderPainted(false);
+        btnCM2.setContentAreaFilled(false);
+        btnCM2.setFocusPainted(false);
+        btnCM2.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnCM2.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnCM2.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCM2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCM2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPcaffemochaLayout = new javax.swing.GroupLayout(jPcaffemocha);
         jPcaffemocha.setLayout(jPcaffemochaLayout);
@@ -265,16 +306,21 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPcaffemochaLayout.createSequentialGroup()
                 .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPcaffemochaLayout.createSequentialGroup()
-                        .addGap(38, 38, 38)
+                        .addContainerGap()
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
                         .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel4)))
-                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel20)))
+                            .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ord2)
+                                    .addComponent(jLabel4))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPcaffemochaLayout.setVerticalGroup(
@@ -282,30 +328,33 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPcaffemochaLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jLabel20)
+                .addGroup(jPcaffemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(ord2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel20))
+                    .addGroup(jPcaffemochaLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCM2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-
-        main.add(jPcaffemocha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, -1, -1));
 
         jPcaramelmacchiato.setPreferredSize(new java.awt.Dimension(220, 360));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/caramelmacchiato.jpg"))); // NOI18N
         jLabel6.setToolTipText("Milk, Brewed Espresso, Vanilla Syrup, Caramel Sauce");
 
-        jLabel14.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel14.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel14.setText("Caramel Macchiato");
-        jLabel14.setAlignmentX(0.5F);
-        jLabel14.setAlignmentY(0.0F);
-        jLabel14.setIconTextGap(8);
-        jLabel14.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord3.setBackground(new java.awt.Color(204, 204, 204));
+        ord3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord3.setForeground(new java.awt.Color(102, 102, 102));
+        ord3.setText("Caramel Macchiato");
+        ord3.setAlignmentX(0.5F);
+        ord3.setAlignmentY(0.0F);
+        ord3.setIconTextGap(8);
+        ord3.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea4.setEditable(false);
         jTextArea4.setBackground(new java.awt.Color(240, 240, 240));
@@ -322,7 +371,21 @@ public class Home extends javax.swing.JFrame {
         jTextArea4.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel21.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel21.setText("$7");
+        jLabel21.setText("$7.89");
+        jLabel21.setToolTipText("");
+
+        btnCM3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnCM3.setBorderPainted(false);
+        btnCM3.setContentAreaFilled(false);
+        btnCM3.setFocusPainted(false);
+        btnCM3.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnCM3.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnCM3.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCM3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCM3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPcaramelmacchiatoLayout = new javax.swing.GroupLayout(jPcaramelmacchiato);
         jPcaramelmacchiato.setLayout(jPcaramelmacchiatoLayout);
@@ -334,16 +397,16 @@ public class Home extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jTextArea4))
                     .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
                         .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel14)
-                                    .addComponent(jLabel6)))
-                            .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel21)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(ord3)
+                            .addComponent(jLabel6))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPcaramelmacchiatoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCM3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPcaramelmacchiatoLayout.setVerticalGroup(
@@ -352,29 +415,29 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ord3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextArea4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(jPcaramelmacchiatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnCM3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-
-        main.add(jPcaramelmacchiato, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, -1, 410));
 
         jPcappuccino.setPreferredSize(new java.awt.Dimension(220, 360));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/cappuccino.jpg"))); // NOI18N
         jLabel5.setToolTipText("Milk, Brewed Espresso.");
 
-        jLabel15.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel15.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel15.setText("Cappuccino");
-        jLabel15.setAlignmentX(0.5F);
-        jLabel15.setAlignmentY(0.0F);
-        jLabel15.setIconTextGap(8);
-        jLabel15.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord4.setBackground(new java.awt.Color(204, 204, 204));
+        ord4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord4.setForeground(new java.awt.Color(102, 102, 102));
+        ord4.setText("Cappuccino");
+        ord4.setAlignmentX(0.5F);
+        ord4.setAlignmentY(0.0F);
+        ord4.setIconTextGap(8);
+        ord4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea5.setEditable(false);
         jTextArea5.setBackground(new java.awt.Color(240, 240, 240));
@@ -391,7 +454,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea5.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel22.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel22.setText("$6");
+        jLabel22.setText("$6.79");
+
+        btnCP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnCP4.setBorderPainted(false);
+        btnCP4.setContentAreaFilled(false);
+        btnCP4.setFocusPainted(false);
+        btnCP4.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnCP4.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnCP4.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCP4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCP4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPcappuccinoLayout = new javax.swing.GroupLayout(jPcappuccino);
         jPcappuccino.setLayout(jPcappuccinoLayout);
@@ -405,14 +481,15 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPcappuccinoLayout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
+                            .addComponent(ord4)
                             .addComponent(jLabel5))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCP4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
-            .addGroup(jPcappuccinoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel22)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPcappuccinoLayout.setVerticalGroup(
             jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -420,29 +497,32 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jTextArea5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(jLabel22)
+                .addGroup(jPcappuccinoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                        .addComponent(ord4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jTextArea5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                        .addComponent(jLabel22))
+                    .addGroup(jPcappuccinoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnCP4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-
-        main.add(jPcappuccino, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 40, -1, 410));
 
         jPespresso.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/espresso.jpg"))); // NOI18N
         jLabel8.setToolTipText("Brewed Espresso, Velvety Crema");
 
-        jLabel16.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel16.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel16.setText("Espresso");
-        jLabel16.setAlignmentX(0.5F);
-        jLabel16.setAlignmentY(0.0F);
-        jLabel16.setIconTextGap(8);
-        jLabel16.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord5.setBackground(new java.awt.Color(204, 204, 204));
+        ord5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord5.setForeground(new java.awt.Color(102, 102, 102));
+        ord5.setText("Espresso");
+        ord5.setAlignmentX(0.5F);
+        ord5.setAlignmentY(0.0F);
+        ord5.setIconTextGap(8);
+        ord5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea6.setEditable(false);
         jTextArea6.setBackground(new java.awt.Color(240, 240, 240));
@@ -459,7 +539,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea6.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel23.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel23.setText("$4");
+        jLabel23.setText("$4.19");
+
+        btnES5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnES5.setBorderPainted(false);
+        btnES5.setContentAreaFilled(false);
+        btnES5.setFocusPainted(false);
+        btnES5.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnES5.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnES5.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnES5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnES5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPespressoLayout = new javax.swing.GroupLayout(jPespresso);
         jPespresso.setLayout(jPespressoLayout);
@@ -467,20 +560,20 @@ public class Home extends javax.swing.JFrame {
             jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPespressoLayout.createSequentialGroup()
                 .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPespressoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextArea6))
                     .addGroup(jPespressoLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
                         .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ord5)
+                            .addComponent(jLabel8))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPespressoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextArea6, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPespressoLayout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel8)))
-                            .addGroup(jPespressoLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel23)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addComponent(jLabel23)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnES5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
         );
         jPespressoLayout.setVerticalGroup(
@@ -489,29 +582,32 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextArea6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(jLabel23)
+                .addGroup(jPespressoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPespressoLayout.createSequentialGroup()
+                        .addComponent(ord5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextArea6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                        .addComponent(jLabel23))
+                    .addGroup(jPespressoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnES5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-
-        main.add(jPespresso, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
 
         jPflatwhite.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/flatwhite.jpg"))); // NOI18N
         jLabel7.setToolTipText("Milk, Brewed Espresso.");
 
-        jLabel17.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel17.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel17.setText("Flat White");
-        jLabel17.setAlignmentX(0.5F);
-        jLabel17.setAlignmentY(0.0F);
-        jLabel17.setIconTextGap(8);
-        jLabel17.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord6.setBackground(new java.awt.Color(204, 204, 204));
+        ord6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord6.setForeground(new java.awt.Color(102, 102, 102));
+        ord6.setText("Flat White");
+        ord6.setAlignmentX(0.5F);
+        ord6.setAlignmentY(0.0F);
+        ord6.setIconTextGap(8);
+        ord6.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea7.setEditable(false);
         jTextArea7.setBackground(new java.awt.Color(240, 240, 240));
@@ -528,7 +624,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea7.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel24.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel24.setText("$7");
+        jLabel24.setText("$7.39");
+
+        btnFW6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnFW6.setBorderPainted(false);
+        btnFW6.setContentAreaFilled(false);
+        btnFW6.setFocusPainted(false);
+        btnFW6.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnFW6.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnFW6.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnFW6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFW6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPflatwhiteLayout = new javax.swing.GroupLayout(jPflatwhite);
         jPflatwhite.setLayout(jPflatwhiteLayout);
@@ -537,17 +646,22 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPflatwhiteLayout.createSequentialGroup()
                 .addGroup(jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPflatwhiteLayout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel17))
-                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel24)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnFW6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPflatwhiteLayout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel7))
-                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel24)))
+                        .addGroup(jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addComponent(ord6))
+                            .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addComponent(jLabel7)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPflatwhiteLayout.setVerticalGroup(
@@ -556,29 +670,32 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jLabel24)
+                .addGroup(jPflatwhiteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addComponent(ord6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextArea7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel24))
+                    .addGroup(jPflatwhiteLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnFW6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-
-        main.add(jPflatwhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 490, -1, -1));
 
         jPicedcaffeamericano.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/icedcaffeamericano.jpg"))); // NOI18N
         jLabel9.setToolTipText("Ice, Water, Brewed Espresso.");
 
-        jLabel18.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel18.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel18.setText("Caffe Americano");
-        jLabel18.setAlignmentX(0.5F);
-        jLabel18.setAlignmentY(0.0F);
-        jLabel18.setIconTextGap(8);
-        jLabel18.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord7.setBackground(new java.awt.Color(204, 204, 204));
+        ord7.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord7.setForeground(new java.awt.Color(102, 102, 102));
+        ord7.setText("Caffe Americano");
+        ord7.setAlignmentX(0.5F);
+        ord7.setAlignmentY(0.0F);
+        ord7.setIconTextGap(8);
+        ord7.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea8.setEditable(false);
         jTextArea8.setBackground(new java.awt.Color(240, 240, 240));
@@ -595,7 +712,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea8.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel25.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel25.setText("$8");
+        jLabel25.setText("$8.29");
+
+        btnCA7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnCA7.setBorderPainted(false);
+        btnCA7.setContentAreaFilled(false);
+        btnCA7.setFocusPainted(false);
+        btnCA7.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnCA7.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnCA7.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnCA7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCA7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPicedcaffeamericanoLayout = new javax.swing.GroupLayout(jPicedcaffeamericano);
         jPicedcaffeamericano.setLayout(jPicedcaffeamericanoLayout);
@@ -604,19 +734,19 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
                 .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextArea8))
+                    .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
                         .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel18)
-                                    .addComponent(jLabel9)))
-                            .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(ord7)
+                            .addComponent(jLabel9))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jTextArea8)))
+                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCA7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPicedcaffeamericanoLayout.setVerticalGroup(
@@ -625,29 +755,32 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextArea8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(jLabel25)
+                .addGroup(jPicedcaffeamericanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addComponent(ord7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextArea8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                        .addComponent(jLabel25))
+                    .addGroup(jPicedcaffeamericanoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnCA7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-
-        main.add(jPicedcaffeamericano, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 490, -1, -1));
 
         jPwhitechocolatemocha.setPreferredSize(new java.awt.Dimension(220, 410));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/whitechocolatemocha.jpg"))); // NOI18N
         jLabel10.setToolTipText("Milk, White Chocolate Mocha Sauce, Brewed Espresso, Whipped Cream ");
 
-        jLabel19.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel19.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel19.setText("White Choco Mocha");
-        jLabel19.setAlignmentX(0.5F);
-        jLabel19.setAlignmentY(0.0F);
-        jLabel19.setIconTextGap(8);
-        jLabel19.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        ord8.setBackground(new java.awt.Color(204, 204, 204));
+        ord8.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        ord8.setForeground(new java.awt.Color(102, 102, 102));
+        ord8.setText("White Choco Mocha");
+        ord8.setAlignmentX(0.5F);
+        ord8.setAlignmentY(0.0F);
+        ord8.setIconTextGap(8);
+        ord8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
         jTextArea9.setEditable(false);
         jTextArea9.setBackground(new java.awt.Color(240, 240, 240));
@@ -664,7 +797,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea9.setMargin(new java.awt.Insets(4, 4, 4, 4));
 
         jLabel26.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
-        jLabel26.setText("$9");
+        jLabel26.setText("$9.89");
+
+        btnWCM8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jmachieved/projectcafe/images/cafemenu/next.png"))); // NOI18N
+        btnWCM8.setBorderPainted(false);
+        btnWCM8.setContentAreaFilled(false);
+        btnWCM8.setFocusPainted(false);
+        btnWCM8.setMaximumSize(new java.awt.Dimension(40, 40));
+        btnWCM8.setMinimumSize(new java.awt.Dimension(40, 40));
+        btnWCM8.setPreferredSize(new java.awt.Dimension(40, 40));
+        btnWCM8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnWCM8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPwhitechocolatemochaLayout = new javax.swing.GroupLayout(jPwhitechocolatemocha);
         jPwhitechocolatemocha.setLayout(jPwhitechocolatemochaLayout);
@@ -678,13 +824,16 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel26))
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnWCM8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPwhitechocolatemochaLayout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel10))))
-                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(ord8)
+                            .addComponent(jLabel10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPwhitechocolatemochaLayout.setVerticalGroup(
             jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -692,22 +841,90 @@ public class Home extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ord8, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextArea9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addGroup(jPwhitechocolatemochaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnWCM8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26))
                 .addContainerGap())
         );
 
-        main.add(jPwhitechocolatemocha, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 490, -1, -1));
+        jLabel27.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        jLabel27.setText("Your order");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(138, Short.MAX_VALUE)
+                .addComponent(jLabel27)
+                .addGap(202, 202, 202))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel27)
+                .addContainerGap(787, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout mainLayout = new javax.swing.GroupLayout(main);
+        main.setLayout(mainLayout);
+        mainLayout.setHorizontalGroup(
+            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPcaffemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPflatwhite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        mainLayout.setVerticalGroup(
+            mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainLayout.createSequentialGroup()
+                        .addComponent(jPcaffeamerica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jPespresso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mainLayout.createSequentialGroup()
+                        .addComponent(jPcaffemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jPflatwhite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mainLayout.createSequentialGroup()
+                        .addComponent(jPcaramelmacchiato, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jPicedcaffeamericano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mainLayout.createSequentialGroup()
+                        .addComponent(jPcappuccino, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(jPwhitechocolatemocha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 1498, Short.MAX_VALUE)
-            .addComponent(stat, javax.swing.GroupLayout.DEFAULT_SIZE, 1498, Short.MAX_VALUE)
+            .addComponent(stat, javax.swing.GroupLayout.DEFAULT_SIZE, 1600, Short.MAX_VALUE)
+            .addComponent(main, javax.swing.GroupLayout.DEFAULT_SIZE, 1600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -725,14 +942,15 @@ public class Home extends javax.swing.JFrame {
 
     private void lbCloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCloseMouseClicked
         // TODO add your handling code here:
+        ImageIcon iconn = new ImageIcon(Home.class.getResource("closee.png"));
         int respons = JOptionPane.showConfirmDialog(this, "Do you to continue this action? ",
-               "Warning",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        
-        if(respons == JOptionPane.YES_OPTION){
+                "Closing...", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, iconn);
+
+        if (respons == JOptionPane.YES_OPTION) {
             System.exit(0);
-        }else{
+        } else {
         }
-        
+
     }//GEN-LAST:event_lbCloseMouseClicked
 
     private void lbMinimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbMinimizeMouseClicked
@@ -741,17 +959,108 @@ public class Home extends javax.swing.JFrame {
 
     private void lbFullMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbFullMouseClicked
         // TODO add your handling code here:
-        if(max){
+        if (max) {
             Home.this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();  
+            GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
             Home.this.setMaximizedBounds(env.getMaximumWindowBounds());
-           max =false; 
-        }else{
+            max = false;
+        } else {
             setExtendedState(JFrame.NORMAL);
-            max= true;
+            max = true;
         }
-       // setExtendedState(getExtendedState()| Home.MAXIMIZED_BOTH);
+        // setExtendedState(getExtendedState()| Home.MAXIMIZED_BOTH);
     }//GEN-LAST:event_lbFullMouseClicked
+
+    //Price
+    private static final double[] prices = {
+        5.49, 9.59, 7.89, 6.79,
+        4.19, 7.39, 8.29, 9.89
+    };
+    private static final String[] menu = {
+        "Caffe America", "Caffe Mocha", "Caramel Macchiato", "Cappuccino",
+        "Espresso", "Flat White", "Caffe Americano", "White Choco Mocha"
+    };
+
+    private void getOrder(String Order) {
+        ImageIcon icon = new ImageIcon(Home.class.getResource("micon.png"));
+        int index = 0;
+        for (String cafe : menu) {
+            if (Order.equals(cafe)) {
+                try {
+                    int Orders = Integer.parseInt(
+                            JOptionPane.showInputDialog(
+                                    this, "How many Orders you want?", "Input QTY", JOptionPane.INFORMATION_MESSAGE
+                            )
+                    );
+                    double PRICE = prices[index] * Orders;
+                    JOptionPane.showMessageDialog(
+                            this, "Order : " + cafe + "\n"
+                            + "QTY : " + Orders + "\n"
+                            + "Price : " + prices[index] + "\n"
+                            + "Total Price : " + PRICE, "ITEM", JOptionPane.INFORMATION_MESSAGE, icon
+                    );
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(
+                            null, "Enter Qty", "Warning!", JOptionPane.INFORMATION_MESSAGE, icon
+                    );
+                }
+                return;
+            }
+            index++;
+        }
+    }
+
+    //---------------------------------------------------------------1st button
+    private void btnCA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCA1ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Caffe America";
+        getOrder(Order);
+
+    }//GEN-LAST:event_btnCA1ActionPerformed
+    //---------------------------------------------------------------2nd button
+    private void btnCM2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCM2ActionPerformed
+
+        // TODO add your handling code here:
+        String Order = "Caffe Mocha";
+        getOrder(Order);
+
+    }//GEN-LAST:event_btnCM2ActionPerformed
+    //---------------------------------------------------------------3rd button
+    private void btnCM3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCM3ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Caramel Macchiato";
+        getOrder(Order);
+    }//GEN-LAST:event_btnCM3ActionPerformed
+    //---------------------------------------------------------------4th button
+    private void btnCP4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCP4ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Cappuccino";
+        getOrder(Order);
+    }//GEN-LAST:event_btnCP4ActionPerformed
+    //---------------------------------------------------------------5th button
+    private void btnES5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnES5ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Espresso";
+        getOrder(Order);
+    }//GEN-LAST:event_btnES5ActionPerformed
+    //---------------------------------------------------------------6th button
+    private void btnFW6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFW6ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Flat White";
+        getOrder(Order);
+    }//GEN-LAST:event_btnFW6ActionPerformed
+    //---------------------------------------------------------------7th button
+    private void btnCA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCA7ActionPerformed
+        // TODO add your handling code here:
+        String Order = "Caffe Americano";
+        getOrder(Order);
+    }//GEN-LAST:event_btnCA7ActionPerformed
+    //---------------------------------------------------------------8th button
+    private void btnWCM8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWCM8ActionPerformed
+        // TODO add your handling code here:
+        String Order = "White Choco Mocha";
+        getOrder(Order);
+    }//GEN-LAST:event_btnWCM8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -789,17 +1098,17 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCA1;
+    private javax.swing.JButton btnCA7;
+    private javax.swing.JButton btnCM2;
+    private javax.swing.JButton btnCM3;
+    private javax.swing.JButton btnCP4;
+    private javax.swing.JButton btnES5;
+    private javax.swing.JButton btnFW6;
+    private javax.swing.JButton btnWCM8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -808,6 +1117,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -815,6 +1125,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPcaffeamerica;
     private javax.swing.JPanel jPcaffemocha;
     private javax.swing.JPanel jPcappuccino;
@@ -835,10 +1146,19 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbFull;
     private javax.swing.JLabel lbMinimize;
     private javax.swing.JPanel main;
+    private javax.swing.JLabel ord1;
+    private javax.swing.JLabel ord2;
+    private javax.swing.JLabel ord3;
+    private javax.swing.JLabel ord4;
+    private javax.swing.JLabel ord5;
+    private javax.swing.JLabel ord6;
+    private javax.swing.JLabel ord7;
+    private javax.swing.JLabel ord8;
     private javax.swing.JPanel stat;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon() {
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icoo.png")));
     }
+
 }
