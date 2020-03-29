@@ -1001,8 +1001,8 @@ public class Home extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(
                             this, "Order : " + cafe + "\n"
                             + "QTY : " + Orders + "\n"
-                            + "Price : " + prices[index] + "\n"
-                            + "Total Price : " + PRICE, "ITEM", JOptionPane.INFORMATION_MESSAGE, icon
+                            + "Price : $" + prices[index] + "\n"
+                            + "Total Price : $" + PRICE, "ITEM", JOptionPane.INFORMATION_MESSAGE, icon
                     );
                 } catch (NumberFormatException e) { // If the user enters a string type instead of integer so s/he will try again.
                     JOptionPane.showMessageDialog(
