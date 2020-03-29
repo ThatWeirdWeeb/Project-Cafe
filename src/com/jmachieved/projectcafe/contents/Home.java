@@ -976,37 +976,41 @@ public class Home extends javax.swing.JFrame {
         5.49, 9.59, 7.89, 6.79,
         4.19, 7.39, 8.29, 9.89
     };
+    //Menu
     private static final String[] menu = {
         "Caffe America", "Caffe Mocha", "Caramel Macchiato", "Cappuccino",
         "Espresso", "Flat White", "Caffe Americano", "White Choco Mocha"
     };
 
-    private void getOrder(String Order) {
+    private void getOrder(String Order) { /* Instead of asking the user to what to order i made a 
+                                           * parameter then it gets the order in the buttons and assigned
+                                           * what string(Order) they are.
+                                           */
         ImageIcon icon = new ImageIcon(Home.class.getResource("micon.png"));
-        int index = 0;
-        for (String cafe : menu) {
-            if (Order.equals(cafe)) {
+        int index = 0;                                                  
+        for (String cafe : menu) { //Enhanced For Loop
+            if (Order.equals(cafe)) { // So if its equal to the order that i assigned every button then it indexes to the menu.
                 try {
-                    int Orders = Integer.parseInt(
+                    int Orders = Integer.parseInt( // The qty prompt.
                             JOptionPane.showInputDialog(
                                     this, "How many Orders you want?", "Input QTY", JOptionPane.INFORMATION_MESSAGE
                             )
                     );
-                    double PRICE = prices[index] * Orders;
+                    double PRICE = prices[index] * Orders; // Operation.
                     JOptionPane.showMessageDialog(
                             this, "Order : " + cafe + "\n"
                             + "QTY : " + Orders + "\n"
                             + "Price : " + prices[index] + "\n"
                             + "Total Price : " + PRICE, "ITEM", JOptionPane.INFORMATION_MESSAGE, icon
                     );
-                } catch (NumberFormatException e) {
+                } catch (NumberFormatException e) { // If the user enters a string type instead of integer so s/he will try again.
                     JOptionPane.showMessageDialog(
                             null, "Enter Qty", "Warning!", JOptionPane.INFORMATION_MESSAGE, icon
                     );
                 }
                 return;
             }
-            index++;
+            index++;// Navigates the price of the ordered item.
         }
     }
 
