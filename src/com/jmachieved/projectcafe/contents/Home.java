@@ -997,6 +997,7 @@ public class Home extends javax.swing.JFrame {
                             )
                     );
                     double PRICE = prices[index] * Orders; // Operation.
+                    PRICE = Math.round(PRICE*100.0)/100.0; // Two decimal places
                     JOptionPane.showMessageDialog(
                             this, "Order : " + cafe + "\n"
                             + "QTY : " + Orders + "\n"
